@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Uttar Pradesh Government Exam Syllabus and Preparation Portal">
+
+    <title>UP Exam Portal | Government Exam Syllabus</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+    <div class="logo">
+        UP<span>EXAM</span>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#exams">All Exams</a>
+        <a href="#categories">Categories</a>
+        <a href="#official">Official Websites</a>
+    </nav>
+
+</header>
+
+
+<!-- HERO SECTION -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <span class="badge">
+            UTTAR PRADESH GOVERNMENT EXAMINATION PORTAL
+        </span>
+
+        <h1>
+            Your Destination for
+            <span>UP Government Exams</span>
+        </h1>
+
+        <p>
+            Explore examination patterns, complete syllabi,
+            subjects, eligibility and preparation information
+            for Uttar Pradesh government examinations.
+        </p>
+
+        <div class="search-container">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search exams... e.g. UPPSC PCS, Lekhpal, Police SI"
+                oninput="searchExams()"
+            >
+
+            <button onclick="searchExams()">
+                Search
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- STATISTICS -->
+
+<section class="stats">
+
+    <div class="stat-card">
+        <h2 id="totalExams">0</h2>
+        <p>Examinations</p>
+    </div>
+
+    <div class="stat-card">
+        <h2>4+</h2>
+        <p>Major Authorities</p>
+    </div>
+
+    <div class="stat-card">
+        <h2>100%</h2>
+        <p>Free Access</p>
+    </div>
+
+</section>
+
+
+<!-- CATEGORIES -->
+
+<section class="categories" id="categories">
+
+    <h2>Explore Exam Categories</h2>
+
+    <div class="category-grid">
+
+        <button onclick="filterCategory('UPPSC')">
+            UPPSC Exams
+        </button>
+
+        <button onclick="filterCategory('UPSSSC')">
+            UPSSSC Exams
+        </button>
+
+        <button onclick="filterCategory('POLICE')">
+            UP Police Exams
+        </button>
+
+        <button onclick="filterCategory('OTHER')">
+            Other UP Exams
+        </button>
+
+        <button onclick="filterCategory('ALL')">
+            Show All Exams
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- EXAM LIST -->
+
+<section class="exams" id="exams">
+
+    <div class="section-heading">
+
+        <h2>Uttar Pradesh Government Examinations</h2>
+
+        <p>
+            Select an examination to explore its syllabus.
+        </p>
+
+    </div>
+
+    <div class="exam-grid" id="examGrid">
+
+    </div>
+
+    <p id="noResults" hidden>
+        No examinations found.
+    </p>
+
+</section>
+
+
+<!-- SYLLABUS MODAL -->
+
+<div class="modal" id="syllabusModal">
+
+    <div class="modal-content">
+
+        <button class="close-btn"
+                onclick="closeModal()">
+            ×
+        </button>
+
+        <div id="syllabusDetails">
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- OFFICIAL WEBSITES -->
+
+<section class="official" id="official">
+
+    <h2>Official Examination Websites</h2>
+
+    <div class="official-grid">
+
+        <a href="https://uppsc.up.nic.in/"
+           target="_blank">
+            UPPSC Official Website
+        </a>
+
+        <a href="https://upsssc.gov.in/"
+           target="_blank">
+            UPSSSC Official Website
+        </a>
+
+        <a href="https://uppbpb.gov.in/"
+           target="_blank">
+            UP Police Recruitment Board
+        </a>
+
+        <a href="https://updeled.gov.in/"
+           target="_blank">
+            UP DElEd / Teacher Examination Portal
+        </a>
+
+        <a href="https://jeecup.admissions.nic.in/"
+           target="_blank">
+            JEECUP Official Website
+        </a>
+
+        <a href="https://upbed.nic.in/"
+           target="_blank">
+            UP B.Ed JEE
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- DISCLAIMER -->
+
+<section class="disclaimer">
+
+    <h3>Important Information</h3>
+
+    <p>
+        This is an educational information portal.
+        Syllabus, eligibility, examination pattern,
+        marks and selection procedures may change
+        according to individual recruitment notifications.
+
+        Always check the latest official notification
+        before preparing or applying.
+    </p>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h2>UP EXAM PORTAL</h2>
+
+    <p>
+        Your guide to Uttar Pradesh Government Examinations.
+    </p>
+
+    <p>
+        Educational purpose only.
+    </p>
+
+    <p>
+        © 2026 UP Exam Portal
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
